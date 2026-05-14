@@ -9,14 +9,20 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" itemScope itemType="https://schema.org/WebPage">
       <Header />
-      <main>
+      <main role="main" aria-label="Main content">
         <Hero />
-        <Solutions />
-        <Features />
+        <article itemScope itemType="https://schema.org/Service">
+          <Solutions />
+        </article>
+        <article itemScope itemType="https://schema.org/SoftwareApplication">
+          <Features />
+        </article>
         <Partners />
-        <Projects />
+        <article itemScope itemType="https://schema.org/Product">
+          <Projects />
+        </article>
         <Contact />
       </main>
       <Footer />
