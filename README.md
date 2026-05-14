@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CarbonMint Clone
+
+A Next.js clone of the CarbonMint website (carbonmint.com), built with TypeScript and Tailwind CSS.
+
+## About CarbonMint
+
+CarbonMint drives sustainable farming innovation by empowering farmers to transition to resource-efficient regenerative agricultural practices. The platform aims to make societal and environmental impact by fostering thriving rural communities and improving soil health while reducing resource usage.
+
+## Features
+
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Modern UI**: Built with Tailwind CSS for a clean, professional look
+- **TypeScript**: Type-safe code for better development experience
+- **SEO Optimized**: Proper metadata and semantic HTML
+- **Smooth Navigation**: Smooth scrolling and intuitive navigation
+
+## Tech Stack
+
+- **Framework**: Next.js 16.2.6
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Deployment**: Optimized for Vercel
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── about/          # About Us page
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Homepage
+│   └── globals.css     # Global styles
+└── components/
+    ├── Header.tsx      # Navigation header
+    ├── Hero.tsx        # Hero section
+    ├── Solutions.tsx   # Solutions section
+    ├── Features.tsx    # Features & Benefits sections
+    ├── Projects.tsx    # Projects showcase
+    ├── Contact.tsx     # Contact form
+    └── Footer.tsx      # Footer
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Import your repository to Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Click "Deploy"
+
+Your site will be live in minutes!
+
+## License
+
+This is a clone project created for demonstration purposes.
