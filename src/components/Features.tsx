@@ -1,8 +1,14 @@
 export default function Features() {
   const features = [
     {
-      title: 'Farmbook',
-      description: 'Comprehensive farmer, land, field parcel capture, tracking farm or processing activities, and resource management with ERP',
+      title: 'Hyperlocal Package of Practices (PoP)',
+      description: 'Ready-to-deploy climate-smart agronomy frameworks tailored for local farming conditions and desired sustainability outcomes.',
+      details: [
+        'Crop-specific recommendations',
+        'Climate-smart interventions',
+        'Regenerative agriculture practices',
+        'Resource optimization strategies'
+      ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -11,54 +17,73 @@ export default function Features() {
       color: 'from-green-400 to-emerald-500',
     },
     {
-      title: 'Food Tokens',
-      description: 'Gamification, ESGH scoring and rewards for responsible farming practices through points, rewards and linkage to consumers, carbon markets',
+      title: 'AgriOS™ Farm Management',
+      description: 'A comprehensive digital farm management system for managing farmers, land parcels, crops, resources, and field operations.',
+      details: [
+        'Farmer onboarding',
+        'Land mapping',
+        'Crop lifecycle management',
+        'Resource tracking',
+        'Operational monitoring',
+        'Data-driven decision support'
+      ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      color: 'from-yellow-400 to-orange-500',
-    },
-    {
-      title: 'Data Handling',
-      description: 'Mobile, remote sensing and web based tools for data and evidence collection, dMRV. Integration of data, processing and storage with blockchain immutability, privacy and security',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
         </svg>
       ),
       color: 'from-blue-400 to-indigo-500',
     },
     {
-      title: 'Governance Dashboard',
-      description: 'Governance reports, insights and tailored advisory based trends, information, AI and information from research community and project administrators',
+      title: 'Mobile & Web Applications',
+      description: 'Simple yet powerful mobile and web platforms designed for field officers, FPOs, and farmers.',
+      details: [
+        'Farm activity tracking',
+        'Real-time data capture',
+        'Evidence collection',
+        'Field monitoring',
+        'Workflow management'
+      ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
       color: 'from-purple-400 to-pink-500',
     },
     {
-      title: 'QR codes & Evidence Sharing',
-      description: 'Easy mechanism to share evidences of land use, farming practices/processes, measurements and quality assurance to consumers, auditors, financial, insurance and relevant stakeholders',
+      title: 'Traceability',
+      description: 'Create transparent and trusted agricultural supply chains with end-to-end traceability systems.',
+      details: [
+        'Farmer journey',
+        'Land records',
+        'Crop lifecycle data',
+        'Sustainability practices',
+        'Evidence for auditors and buyers'
+      ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
-        </svg>
-      ),
-      color: 'from-red-400 to-rose-500',
-    },
-    {
-      title: 'Package of Practices Library',
-      description: 'Tools to configure cropping systems, planning and execution based on built-in Package of Practices backed by advisors and research community that can be customized for hyper local needs',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
       color: 'from-teal-400 to-cyan-500',
+    },
+    {
+      title: 'Digital MRV for Carbon Projects',
+      description: 'Advanced Monitoring, Reporting, and Verification (MRV) systems for sustainability and carbon initiatives.',
+      details: [
+        'Intervention monitoring',
+        'Remote sensing',
+        'Field validation',
+        'Carbon outcome tracking',
+        'Evidence-based verification'
+      ],
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      color: 'from-yellow-400 to-orange-500',
     },
   ];
 
@@ -112,15 +137,22 @@ export default function Features() {
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   {feature.description}
                 </p>
                 
-                <div className="mt-4 flex items-center text-green-700 font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-sm">Learn more</span>
-                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                <div className="mt-4">
+                  <p className="text-sm font-semibold text-gray-900 mb-2">Includes:</p>
+                  <ul className="space-y-1">
+                    {feature.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-gray-600">
+                        <svg className="w-4 h-4 text-green-600 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}

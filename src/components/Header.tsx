@@ -61,17 +61,17 @@ export default function Header() {
             <Link href="#home" className="hover:text-green-700 transition-colors">
               Home
             </Link>
-            <Link href="#solutions" className="hover:text-green-700 transition-colors">
-              Solutions
+            <Link href="#rice360" className="hover:text-green-700 transition-colors">
+              Rice360™
+            </Link>
+            <Link href="#carbon" className="hover:text-green-700 transition-colors">
+              Carbon
             </Link>
             <Link href="#features" className="hover:text-green-700 transition-colors">
-              Features
+              Platform
             </Link>
             <Link href="#partners" className="hover:text-green-700 transition-colors">
               Partners
-            </Link>
-            <Link href="#projects" className="hover:text-green-700 transition-colors">
-              Projects
             </Link>
             <Link href="/about" className="hover:text-green-700 transition-colors">
               About Us
@@ -95,18 +95,25 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#solutions"
+              href="#rice360"
               className="block hover:text-green-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Solutions
+              Rice360™
+            </Link>
+            <Link
+              href="#carbon"
+              className="block hover:text-green-700 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Carbon
             </Link>
             <Link
               href="#features"
               className="block hover:text-green-700 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Features
+              Platform
             </Link>
             <Link
               href="#partners"
@@ -114,13 +121,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Partners
-            </Link>
-            <Link
-              href="#projects"
-              className="block hover:text-green-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Projects
             </Link>
             <Link
               href="/about"

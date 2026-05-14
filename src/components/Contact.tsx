@@ -29,9 +29,14 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
-          Get in Touch
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Ready to Build the Future of Sustainable Agriculture?
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Partner with CarbonMint to create scalable climate-smart agriculture and carbon initiatives that improve farmer livelihoods and environmental outcomes.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
