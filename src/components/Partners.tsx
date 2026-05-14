@@ -1,17 +1,21 @@
+import Image from 'next/image';
+
 export default function Partners() {
   const partners = [
-    'NABARD',
-    'IIRR',
-    'Bayer',
-    'Mana Telangana',
-    'Kattangur FPO'
+    { name: 'NABARD', logo: '/partners/nabard.png' },
+    { name: 'IIRR', logo: '/partners/iirr.png' },
+    { name: 'Bayer', logo: '/partners/bayer.png' },
+    { name: 'Mana Telangana', logo: '/partners/mana-telangana.png' },
+    { name: 'Kattangur FPO', logo: '/partners/kattangur-fpo.png' },
+    { name: 'Department of Agriculture (Telangana)', logo: '/partners/dept-agriculture-telangana.png' },
+    { name: 'Prasad Seeds', logo: '/partners/prasad-seeds.png' }
   ];
 
   const clients = [
-    'Kattangur FPCL',
-    'Two Brothers',
-    'DeHaat',
-    'Organo'
+    { name: 'Kattangur FPCL', logo: '/partners/kattangur-fpcl.png' },
+    { name: 'Two Brothers', logo: '/partners/two-brothers.png' },
+    { name: 'DeHaat', logo: '/partners/dehaat.png' },
+    { name: 'Organo', logo: '/partners/organo.png' }
   ];
 
   return (
@@ -27,18 +31,27 @@ export default function Partners() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-12">
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               Our Ecosystem Partners
             </h3>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center text-center"
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 flex flex-col items-center justify-center text-center min-h-[140px] border border-gray-100"
                 >
-                  <h4 className="text-lg font-bold text-gray-900">{partner}</h4>
+                  <div className="relative w-full h-20 mb-3">
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    />
+                  </div>
+                  <h4 className="text-xs md:text-sm font-semibold text-gray-700">{partner.name}</h4>
                 </div>
               ))}
             </div>
@@ -48,13 +61,22 @@ export default function Partners() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               Organizations We Work With
             </h3>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {clients.map((client, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center text-center"
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 flex flex-col items-center justify-center text-center min-h-[140px] border border-gray-100"
                 >
-                  <h4 className="text-lg font-bold text-gray-900">{client}</h4>
+                  <div className="relative w-full h-20 mb-3">
+                    <Image
+                      src={client.logo}
+                      alt={`${client.name} logo`}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                    />
+                  </div>
+                  <h4 className="text-xs md:text-sm font-semibold text-gray-700">{client.name}</h4>
                 </div>
               ))}
             </div>

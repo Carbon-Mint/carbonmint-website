@@ -119,6 +119,73 @@ export default function Projects() {
           </div>
         </div>
       </section>
+
+      <section id="carbon-project" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">Carbon Initiative</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">
+              Our Carbon Project
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Implementing sustainable agricultural practices at scale to reduce emissions and create new income opportunities for farmers through carbon credits.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
+                <div className="text-5xl font-bold text-green-700 mb-2">1.5 lakh</div>
+                <div className="text-lg text-gray-700">Acres (Planned Scale)</div>
+              </div>
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
+                <div className="text-5xl font-bold text-blue-700 mb-2">10 min</div>
+                <div className="text-lg text-gray-700">YouTube Video Showcase</div>
+              </div>
+            </div>
+            
+            <div className="prose max-w-none">
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Our carbon project focuses on implementing climate-smart agricultural practices including Direct Seeded Rice (DSR), Alternate Wetting & Drying (AWD), and sustainable farm management across a planned scale of 1.5 lakh acres.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Through digital MRV systems and comprehensive farmer support, we're creating verified carbon outcomes while improving farmer livelihoods and environmental sustainability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-purple-700 font-semibold text-sm uppercase tracking-wider">Collaborative Projects</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">
+              ACRAT Initiative
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Advancing Climate-Resilient Agriculture in Telangana through Technology Integration
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              The ACRAT project, led by Fraunhofer HHI, aims to enhance climate-resilient agriculture in Telangana by integrating advanced technologies. As part of this initiative, CarbonMint contributes its digital dMRV platform to monitor and verify sustainable farming practices.
+            </p>
+            
+            <div className="bg-white rounded-2xl p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Collaboration Partners:</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {['BharatRohan', 'KrishiTantra', 'DeltaThings', 'Fraunhofer HHI'].map((partner, index) => (
+                  <div key={index} className="bg-gradient-to-br from-purple-100 to-indigo-100 p-4 rounded-lg text-center">
+                    <p className="font-semibold text-gray-900">{partner}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
