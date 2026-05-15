@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import VersionDisplay from './VersionDisplay';
 
 export default function Footer() {
   return (
@@ -78,7 +79,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>©2025 CarbonMint India Private Limited</p>
+          <p className="mb-2">©2025 CarbonMint India Private Limited</p>
+          <VersionDisplay />
         </div>
       </div>
     </footer>

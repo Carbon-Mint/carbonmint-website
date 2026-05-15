@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Generate version info before commit
+node scripts/generate-version.js
+
+# Add generated files to commit
+git add src/version.ts public/version.json
