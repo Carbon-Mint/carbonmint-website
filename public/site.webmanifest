@@ -1,0 +1,17 @@
+{
+  "name": "CarbonMint",
+  "short_name": "CarbonMint",
+  "description": "Climate-Smart Agriculture & Carbon Solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2D5016",
+  "icons": [
+    {
+      "src": "/carbonmint-logo.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
