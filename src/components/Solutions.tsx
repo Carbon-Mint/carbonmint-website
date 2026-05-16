@@ -64,7 +64,7 @@ export default function Solutions() {
   ];
 
   return (
-    <section id="carbon" className="py-20 bg-white relative overflow-hidden">
+    <section id="solutions" className="py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-100 to-blue-100 rounded-full filter blur-3xl opacity-30 transform translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-full filter blur-3xl opacity-30 transform -translate-x-1/2 translate-y-1/2"></div>
       
