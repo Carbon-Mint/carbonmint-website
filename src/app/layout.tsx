@@ -77,6 +77,14 @@ export const metadata: Metadata = {
     },
   },
   manifest: '/site.webmanifest',
+  other: {
+    // AI-specific meta tags
+    'ai:title': 'CarbonMint - Climate-Smart Agriculture & Carbon Solutions Platform',
+    'ai:description': 'CarbonMint enables sustainable agriculture through Rice360™, carbon credit programs, Digital MRV, and FPO ecosystem development in India. Specializing in Verra VM0051 AWD methodology for rice cultivation.',
+    'ai:keywords': 'climate-smart agriculture, carbon credits, Rice360, AWD methodology, Verra VM0051, Digital MRV, FPO development, sustainable farming, agricultural technology, carbon finance, rice traceability, Telangana, Andhra Pradesh',
+    'ai:category': 'Agriculture Technology, Climate Solutions, Carbon Development',
+    'ai:region': 'India, Telangana, Andhra Pradesh',
+  },
 };
 
 export default function RootLayout({
