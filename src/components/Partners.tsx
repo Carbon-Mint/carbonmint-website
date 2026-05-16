@@ -3,16 +3,17 @@ import Image from 'next/image';
 export default function Partners() {
   const partners = [
     { name: 'NABARD', logo: '/partners/nabard.png' },
+    { name: 'Department of Agriculture (Telangana)', logo: '/partners/telangana.png' },
     { name: 'IIRR', logo: '/partners/iirr.png' },
+    { name: 'Prasad Seeds', logo: '/partners/prasad-seeds.png' },
+    { name: 'Aghub', logo: '/partners/aghub.png' },
+    { name: 'Mana Telangana FPO Federation', logo: '/partners/mana-telangana.svg' },
+    { name: 'Kattangur FPC', logo: '/partners/kattangur-fpcl.svg' },
     { name: 'Bayer', logo: '/partners/bayer.png' },
-    { name: 'Mana Telangana', logo: '/partners/mana-telangana.png' },
-    { name: 'Kattangur FPO', logo: '/partners/kattangur-fpo.png' },
-    { name: 'Department of Agriculture (Telangana)', logo: '/partners/dept-agriculture-telangana.png' },
-    { name: 'Prasad Seeds', logo: '/partners/prasad-seeds.png' }
   ];
 
   const clients = [
-    { name: 'Kattangur FPCL', logo: '/partners/kattangur-fpcl.png' },
+    { name: 'Kattangur FPCL', logo: '/partners/kattangur-fpcl.svg' },
     { name: 'Two Brothers', logo: '/partners/two-brothers.png' },
     { name: 'DeHaat', logo: '/partners/dehaat.png' },
     { name: 'Organo', logo: '/partners/organo.png' }

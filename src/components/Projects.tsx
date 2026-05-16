@@ -1,7 +1,7 @@
 export default function Projects() {
   const interventions = [
     'Comprehensive crop advisory and Package of Practices (PoP)',
-    'Mechanization support with tractors and farm implements',
+    'Mechanization support with tractors, drones and farm implements',
     'Direct Seeded Rice (DSR) and Alternate Wetting & Drying (AWD) implementation',
     'Digital farm management through mobile and web applications',
     'Activity tracking and evidence collection',
@@ -125,31 +125,31 @@ export default function Projects() {
           <div className="text-center mb-16">
             <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">Carbon Initiative</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">
-              Our Carbon Project
+              Verra VM0051 AWD Carbon Project
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Implementing sustainable agricultural practices at scale to reduce emissions and create new income opportunities for farmers through carbon credits.
+              Implementing Alternate Wetting and Drying (AWD) interventions under the Verra VM0051 methodology across rice-growing regions in Telangana and Andhra Pradesh.
             </p>
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
-                <div className="text-5xl font-bold text-green-700 mb-2">1.5 lakh</div>
-                <div className="text-lg text-gray-700">Acres (Planned Scale)</div>
+                <div className="text-4xl font-bold text-green-700 mb-2">Telangana</div>
+                <div className="text-lg text-gray-700">Primary Implementation Region</div>
               </div>
               <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
-                <div className="text-5xl font-bold text-blue-700 mb-2">10 min</div>
-                <div className="text-lg text-gray-700">YouTube Video Showcase</div>
+                <div className="text-4xl font-bold text-blue-700 mb-2">Andhra Pradesh</div>
+                <div className="text-lg text-gray-700">Expansion Region</div>
               </div>
             </div>
             
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed mb-4">
-                Our carbon project focuses on implementing climate-smart agricultural practices including Direct Seeded Rice (DSR), Alternate Wetting & Drying (AWD), and sustainable farm management across a planned scale of 1.5 lakh acres.
+                Our carbon project applies the Verra VM0051 methodology to reduce methane emissions from rice cultivation through Alternate Wetting and Drying (AWD) water management practices. By implementing controlled irrigation cycles, we help farmers reduce greenhouse gas emissions while maintaining or improving crop yields.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Through digital MRV systems and comprehensive farmer support, we're creating verified carbon outcomes while improving farmer livelihoods and environmental sustainability.
+                Through digital MRV (Measurement, Reporting, and Verification) systems and comprehensive farmer support, we generate verified carbon credits while creating additional income streams for smallholder farmers and promoting sustainable water management across Telangana and Andhra Pradesh.
               </p>
             </div>
           </div>
