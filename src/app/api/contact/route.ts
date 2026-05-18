@@ -4,6 +4,7 @@ import clientPromise from '@/lib/mongodb';
 interface ContactSubmission {
   name: string;
   email: string;
+  phone: string;
   message: string;
   timestamp: string;
   userAgent?: string;
@@ -15,7 +16,7 @@ export async function POST(request: Request) {
     const data = await request.json();
     
     // Validate required fields
-    if (!data.name || !data.email || !data.message) {
+    if (!data.name || !data.email || !data.phone || !data.message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -39,6 +40,7 @@ export async function POST(request: Request) {
     const submission: ContactSubmission = {
       name: data.name.trim(),
       email: data.email.trim().toLowerCase(),
+      phone: data.phone.trim(),
       message: data.message.trim(),
       timestamp: new Date().toISOString(),
       userAgent: request.headers.get('user-agent') || undefined,

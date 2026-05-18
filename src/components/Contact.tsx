@@ -6,6 +6,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
@@ -33,7 +34,7 @@ export default function Contact() {
       }
 
       setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', message: '' });
       
       // Hide success message after 5 seconds
       setTimeout(() => {
@@ -112,6 +113,21 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-gray-700 mb-2 font-medium">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="+91 XXXXX XXXXX"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
                 />
               </div>
