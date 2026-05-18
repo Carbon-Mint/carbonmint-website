@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import BotTracker from "@/components/BotTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,6 +79,9 @@ export const metadata: Metadata = {
     },
   },
   manifest: '/site.webmanifest',
+  verification: {
+    google: 'zvvPCJT0FB3YWKmlDgl1sZkPWVo1Y71hnel_GpWnYBo',
+  },
   other: {
     // AI-specific meta tags
     'ai:title': 'CarbonMint - Climate-Smart Agriculture & Carbon Solutions Platform',
@@ -98,6 +103,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
+        <BotTracker />
         <StructuredData />
         {children}
       </body>
