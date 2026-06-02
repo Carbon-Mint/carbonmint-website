@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Projects() {
   const interventions = [
     'Comprehensive crop advisory and Package of Practices (PoP)',
@@ -148,9 +150,34 @@ export default function Projects() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 Our carbon project applies the Verra VM0051 methodology to reduce methane emissions from rice cultivation through Alternate Wetting and Drying (AWD) water management practices. By implementing controlled irrigation cycles, we help farmers reduce greenhouse gas emissions while maintaining or improving crop yields.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 Through digital MRV (Measurement, Reporting, and Verification) systems and comprehensive farmer support, we generate verified carbon credits while creating additional income streams for smallholder farmers and promoting sustainable water management across Telangana and Andhra Pradesh.
               </p>
+              
+              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 mt-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+                  Ready to Join Our Carbon Programmes?
+                </h3>
+                <p className="text-gray-700 mb-6 text-center">
+                  Transform your FPC's farming practices and earn carbon credits with our comprehensive programmes.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Link
+                    href="/biochar-programme"
+                    className="block bg-green-600 text-white text-center px-6 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                  >
+                    🌱 Biochar Programme
+                    <span className="block text-sm font-normal mt-1">Convert crop residue to carbon credits</span>
+                  </Link>
+                  <Link
+                    href="/water-management-programme"
+                    className="block bg-blue-600 text-white text-center px-6 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  >
+                    💧 Water Management Programme
+                    <span className="block text-sm font-normal mt-1">AWD & DSR carbon credit solutions</span>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

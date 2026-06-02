@@ -74,6 +74,12 @@ export default function Header() {
             <Link href="/#carbon-project" className="hover:text-green-700 transition-colors">
               Carbon
             </Link>
+            <Link href="/biochar-programme" className="hover:text-green-700 transition-colors">
+              Biochar Programme
+            </Link>
+            <Link href="/water-management-programme" className="hover:text-green-700 transition-colors">
+              Water Management
+            </Link>
             <Link href="/about" className="hover:text-green-700 transition-colors">
               About Us
             </Link>
@@ -158,6 +164,20 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Carbon
+            </Link>
+            <Link
+              href="/biochar-programme"
+              className="block hover:text-green-700 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Biochar Programme
+            </Link>
+            <Link
+              href="/water-management-programme"
+              className="block hover:text-green-700 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Water Management
             </Link>
             <Link
               href="/about"

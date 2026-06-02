@@ -63,6 +63,12 @@ export default function Footer() {
               <Link href="/about" className="block text-gray-400 hover:text-green-400 transition-colors">
                 About Us
               </Link>
+              <Link href="/biochar-programme" className="block text-gray-400 hover:text-green-400 transition-colors">
+                Biochar Programme
+              </Link>
+              <Link href="/water-management-programme" className="block text-gray-400 hover:text-green-400 transition-colors">
+                Water Management Programme
+              </Link>
               <Link href="#" className="block text-gray-400 hover:text-green-400 transition-colors">
                 Privacy Policy
               </Link>
