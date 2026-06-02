@@ -125,59 +125,59 @@ export default function Projects() {
       <section id="carbon-project" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">Carbon Initiative</span>
+            <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">Carbon Programmes</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">
-              Verra VM0051 AWD Carbon Project
+              Transform Farming with Carbon Credits
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Implementing Alternate Wetting and Drying (AWD) interventions under the Verra VM0051 methodology across rice-growing regions in Telangana and Andhra Pradesh.
+              Empowering FPCs with comprehensive carbon programmes that turn sustainable farming practices into verified carbon credits and additional income streams for farmers.
             </p>
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
-                <div className="text-4xl font-bold text-green-700 mb-2">Telangana</div>
-                <div className="text-lg text-gray-700">Primary Implementation Region</div>
-              </div>
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
-                <div className="text-4xl font-bold text-blue-700 mb-2">Andhra Pradesh</div>
-                <div className="text-lg text-gray-700">Expansion Region</div>
-              </div>
+            <div className="prose max-w-none mb-8">
+              <p className="text-gray-700 leading-relaxed">
+                Our comprehensive carbon programmes help FPCs transform agricultural practices into verified carbon credits. From converting crop residue into biochar to implementing water-saving rice cultivation techniques, we create measurable climate impact while generating additional income for farmers.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Through digital MRV (Measurement, Reporting, and Verification) systems and end-to-end programme management, we handle the complexity of carbon markets so your FPC can focus on implementation and impact. Our programmes are validated under international standards including Verra VM0051 for water management interventions.
+              </p>
             </div>
             
-            <div className="prose max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Our carbon project applies the Verra VM0051 methodology to reduce methane emissions from rice cultivation through Alternate Wetting and Drying (AWD) water management practices. By implementing controlled irrigation cycles, we help farmers reduce greenhouse gas emissions while maintaining or improving crop yields.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Through digital MRV (Measurement, Reporting, and Verification) systems and comprehensive farmer support, we generate verified carbon credits while creating additional income streams for smallholder farmers and promoting sustainable water management across Telangana and Andhra Pradesh.
-              </p>
-              
-              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 mt-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                  Ready to Join Our Carbon Programmes?
-                </h3>
-                <p className="text-gray-700 mb-6 text-center">
-                  Transform your FPC's farming practices and earn carbon credits with our comprehensive programmes.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Link
-                    href="/biochar-programme"
-                    className="block bg-green-600 text-white text-center px-6 py-4 rounded-lg font-semibold hover:bg-green-700 transition-colors"
-                  >
-                    🌱 Biochar Programme
-                    <span className="block text-sm font-normal mt-1">Convert crop residue to carbon credits</span>
-                  </Link>
-                  <Link
-                    href="/water-management-programme"
-                    className="block bg-blue-600 text-white text-center px-6 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                  >
-                    💧 Water Management Programme
-                    <span className="block text-sm font-normal mt-1">AWD & DSR carbon credit solutions</span>
-                  </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Link
+                href="/biochar-programme"
+                className="group block bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-green-300"
+              >
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-green-700 mb-4">🌱</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Biochar Programme</h3>
+                  <p className="text-gray-700 mb-6">Convert crop residue into carbon credits and soil enrichment</p>
+                  <div className="inline-flex items-center text-green-700 font-semibold group-hover:text-green-800 transition-colors">
+                    Learn More
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Link>
+              
+              <Link
+                href="/water-management-programme"
+                className="group block bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-300"
+              >
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-blue-700 mb-4">💧</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Water Management</h3>
+                  <p className="text-gray-700 mb-6">AWD & DSR techniques for water savings and methane reduction</p>
+                  <div className="inline-flex items-center text-blue-700 font-semibold group-hover:text-blue-800 transition-colors">
+                    Learn More
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

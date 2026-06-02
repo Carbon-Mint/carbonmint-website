@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCarbonDropdownOpen, setIsCarbonDropdownOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
@@ -71,15 +72,51 @@ export default function Header() {
             <Link href="/#rice360" className="hover:text-green-700 transition-colors">
               Rice360™
             </Link>
-            <Link href="/#carbon-project" className="hover:text-green-700 transition-colors">
-              Carbon
-            </Link>
-            <Link href="/biochar-programme" className="hover:text-green-700 transition-colors">
-              Biochar Programme
-            </Link>
-            <Link href="/water-management-programme" className="hover:text-green-700 transition-colors">
-              Water Management
-            </Link>
+            <div className="relative">
+              <button
+                onClick={() => setIsCarbonDropdownOpen(!isCarbonDropdownOpen)}
+                className="hover:text-green-700 transition-colors flex items-center space-x-1"
+              >
+                <span>Carbon Programmes</span>
+                <svg 
+                  className={`w-4 h-4 transition-transform ${isCarbonDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isCarbonDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  <Link
+                    href="/#carbon-project"
+                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors"
+                    onClick={() => setIsCarbonDropdownOpen(false)}
+                  >
+                    <div className="font-medium">Carbon Overview</div>
+                    <div className="text-sm text-gray-500">Main carbon section</div>
+                  </Link>
+                  <Link
+                    href="/biochar-programme"
+                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors"
+                    onClick={() => setIsCarbonDropdownOpen(false)}
+                  >
+                    <div className="font-medium">🌱 Biochar Programme</div>
+                    <div className="text-sm text-gray-500">Convert crop residue to carbon credits</div>
+                  </Link>
+                  <Link
+                    href="/water-management-programme"
+                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors"
+                    onClick={() => setIsCarbonDropdownOpen(false)}
+                  >
+                    <div className="font-medium">💧 Water Management</div>
+                    <div className="text-sm text-gray-500">AWD & DSR carbon solutions</div>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/about" className="hover:text-green-700 transition-colors">
               About Us
             </Link>
@@ -158,27 +195,60 @@ export default function Header() {
             >
               Rice360™
             </Link>
-            <Link
-              href="/#carbon-project"
-              className="block hover:text-green-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Carbon
-            </Link>
-            <Link
-              href="/biochar-programme"
-              className="block hover:text-green-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Biochar Programme
-            </Link>
-            <Link
-              href="/water-management-programme"
-              className="block hover:text-green-700 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Water Management
-            </Link>
+            <div className="space-y-2">
+              <button
+                onClick={() => setIsCarbonDropdownOpen(!isCarbonDropdownOpen)}
+                className="w-full text-left hover:text-green-700 transition-colors flex items-center justify-between"
+              >
+                <span>Carbon Programmes</span>
+                <svg 
+                  className={`w-4 h-4 transition-transform ${isCarbonDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isCarbonDropdownOpen && (
+                <div className="ml-4 space-y-2">
+                  <Link
+                    href="/#carbon-project"
+                    className="block hover:text-green-700 transition-colors py-1"
+                    onClick={() => {
+                      setIsCarbonDropdownOpen(false);
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    <div className="font-medium">Carbon Overview</div>
+                    <div className="text-sm text-gray-500">Main carbon section</div>
+                  </Link>
+                  <Link
+                    href="/biochar-programme"
+                    className="block hover:text-green-700 transition-colors py-1"
+                    onClick={() => {
+                      setIsCarbonDropdownOpen(false);
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    <div className="font-medium">🌱 Biochar Programme</div>
+                    <div className="text-sm text-gray-500">Convert crop residue to carbon credits</div>
+                  </Link>
+                  <Link
+                    href="/water-management-programme"
+                    className="block hover:text-green-700 transition-colors py-1"
+                    onClick={() => {
+                      setIsCarbonDropdownOpen(false);
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    <div className="font-medium">💧 Water Management</div>
+                    <div className="text-sm text-gray-500">AWD & DSR carbon solutions</div>
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link
               href="/about"
               className="block hover:text-green-700 transition-colors"
