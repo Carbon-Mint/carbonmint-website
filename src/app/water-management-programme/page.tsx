@@ -105,7 +105,7 @@ export default function WaterManagementProgramme() {
       <section className="bg-gradient-to-br from-blue-500 via-blue-600 to-cyan-600 text-white py-20">
         <div className="container mx-auto px-6 pt-24">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-6">
+            <h1 className="text-2xl md:text-3xl font-bold mb-6">
               Your Members Grow Rice. Now They Can Grow Carbon Credits Too.
             </h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
@@ -135,9 +135,12 @@ export default function WaterManagementProgramme() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              The Hidden Cost of Traditional Rice Farming
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">The Challenge</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                The Hidden Cost of Traditional Rice Farming
+              </h2>
+            </div>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Traditional flooded, transplanted paddy cultivation is water-intensive by design. Continuous flooding across the growing season:
             </p>
@@ -163,7 +166,7 @@ export default function WaterManagementProgramme() {
             
             <div className="bg-blue-100 rounded-xl p-6">
               <p className="text-lg text-gray-800 leading-relaxed">
-                <strong>Critical Fact:</strong> A single hectare of continuously flooded rice can emit between 300 and 700 kg of methane CO2 equivalent annually. Across millions of hectares, this makes rice cultivation a major contributor to India's agricultural emissions footprint.
+                <strong>Critical Fact:</strong> A single hectare of continuously flooded rice can emit between 300 and 700 kg of methane CO₂ equivalent annually. Across millions of hectares, this makes rice cultivation a major contributor to India's agricultural emissions footprint.
               </p>
               <p className="text-xl font-bold text-green-700 mt-4 text-center">
                 The good news: the solution is simple, proven, and profitable.
@@ -240,9 +243,12 @@ export default function WaterManagementProgramme() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Six ways your members win
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Benefits for Farmers</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                Six ways your members win
+              </h2>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-lg">
@@ -283,9 +289,12 @@ export default function WaterManagementProgramme() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Every enrolled acre is a measurable climate contribution
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Environmental Impact</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                Every enrolled acre is a measurable climate contribution
+              </h2>
+            </div>
             
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
@@ -298,10 +307,10 @@ export default function WaterManagementProgramme() {
                 <tbody>
                   <tr className="border-b border-gray-200">
                     <td className="px-6 py-4 font-semibold text-gray-900">Methane Reduction</td>
-                    <td className="px-6 py-4 text-gray-700">Reduced anaerobic soil conditions cut CH4 emissions by 25–50% per hectare per season</td>
+                    <td className="px-6 py-4 text-gray-700">Reduced anaerobic soil conditions cut CH₄ emissions by 25–50% per hectare per season</td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="px-6 py-4 font-semibold text-gray-900">N2O Management</td>
+                    <td className="px-6 py-4 font-semibold text-gray-900">N₂O Management</td>
                     <td className="px-6 py-4 text-gray-700">CarbonMint's PoP guidance helps manage nitrogen application to minimise nitrous oxide emissions — a potent greenhouse gas</td>
                   </tr>
                   <tr className="border-b border-gray-200">

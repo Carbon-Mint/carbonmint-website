@@ -122,7 +122,7 @@ export default function BiocharProgramme() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="text-3xl mb-2">🌍</div>
-                <div className="text-lg font-semibold">1 tonne of biochar sequesters ~2.5 tonnes CO2e permanently</div>
+                <div className="text-lg font-semibold">1 tonne of biochar sequesters ~2.5 tonnes CO₂e permanently</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
                 <div className="text-3xl mb-2">🌾</div>
@@ -141,9 +141,12 @@ export default function BiocharProgramme() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Every season, a crisis repeats itself.
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-red-600 font-semibold text-sm uppercase tracking-wider">The Problem</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                Every season, a crisis repeats itself.
+              </h2>
+            </div>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               After harvest, millions of tonnes of agricultural residue — paddy straw, sugarcane trash, cotton stalks, maize cobs — pile up across FPC member farms. Farmers face an impossible choice:
             </p>
@@ -230,9 +233,12 @@ export default function BiocharProgramme() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              What changes for your members — season after season
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">Benefits for Farmers</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                What changes for your members — season after season
+              </h2>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6 shadow-lg">
@@ -270,9 +276,12 @@ export default function BiocharProgramme() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Every tonne of biochar is a measurable climate action
-            </h2>
+            <div className="text-center mb-8">
+              <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Environmental Impact</span>
+              <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
+                Every tonne of biochar is a measurable climate action
+              </h2>
+            </div>
             
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
@@ -285,10 +294,10 @@ export default function BiocharProgramme() {
                 <tbody>
                   <tr className="border-b border-gray-200">
                     <td className="px-6 py-4 font-semibold text-gray-900">Carbon Sequestration</td>
-                    <td className="px-6 py-4 text-gray-700">CO2 locked in biochar remains stable for 100-1,000+ years, permanently removing it from the atmosphere</td>
+                    <td className="px-6 py-4 text-gray-700">CO₂ locked in biochar remains stable for 100-1,000+ years, permanently removing it from the atmosphere</td>
                   </tr>
                   <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="px-6 py-4 font-semibold text-gray-900">Methane & N2O Reduction</td>
+                    <td className="px-6 py-4 font-semibold text-gray-900">Methane & N₂O Reduction</td>
                     <td className="px-6 py-4 text-gray-700">Biochar in soil suppresses soil methane and nitrous oxide emissions from microbial activity</td>
                   </tr>
                   <tr className="border-b border-gray-200">
